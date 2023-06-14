@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE en-export SYSTEM "http://xml.evernote.com/pub/evernote-export4.dtd">
+<en-export export-date="20230714T003618Z" application="Evernote" version="10.56.9">
+  <note>
+    <title>Exam Thursday</title>
+    <created>20230425T193941Z</created>
+    <updated>20230425T195614Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>Testing and Design Pattern</div><div>one major sequence diagram - loop in it</div><div>one small state diagram</div><div><br/></div><div><b>Final Exam:</b></div><div>two sequence diagram</div><div>and one state diagram</div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Factory Method Pattern</title>
+    <created>20230425T195013Z</created>
+    <updated>20230502T200741Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>This comes in when a creation need is there</div><div>The creation need is destroying the low coupling you need</div><div>Factory wont apply unless there is a creation need somewhere</div><div><br/></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Final Exam</title>
+    <created>20230502T195230Z</created>
+    <updated>20230502T200119Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>Open Book Part</div><div>2 Sequence Diagrams:</div><ul><li><div>book collection and student collection in one</div></li><li><div>couple of loops in them</div></li></ul><div>State Diagram:</div><ul><li><div>two complex sequence diagram</div></li><li><div>and create one state diagram from them</div></li><li><div>need to use history [H=blah blah]</div></li></ul><div>Closed Book Part:</div><div>Comprehensive part of the exam</div><div>Ask us questions regarding, on everything from day 1</div><div>21 True False questions</div><div>True or False:</div><div>According to the latest study of groups 90% are successful - > false</div><div>Multiple choice where you select correct definition of terms</div><div><br/></div><div>Regarding Methods you put into a CRC card:</div><div>2.) Executed by code developer themselves and confined to the particular </div><div><br/></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Reason for Design Patterns</title>
+    <created>20230418T194801Z</created>
+    <updated>20230425T195015Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><ul><li><div>Aim is to <b>eliminate redundancy</b> in code and maintain <b>low coupling </b></div></li><li><div>Advantage of this is low coupling: makes the code <b>extensible </b>and <b>maintainable </b></div></li><li><div><b>Extensible</b>: add new features easily</div></li><li><div>Super class that takes common features of a bunch of classes and puts them in a super class</div></li><li><div>We want the client to be coupled to the super class</div></li><li><div>Factory M</div></li></ul><div><br/></div><div><br/></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Singleton Class - memorize it</title>
+    <created>20230418T194228Z</created>
+    <updated>20230502T200511Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>public class Singleton Class {</div><div style="padding-left:40px;">private static SingletonClass myInstance;</div><div style="padding-left:40px;">private Singleton Class(){</div><div style="padding-left:40px;">}</div><div style="padding-left:40px;"><br/></div><div style="padding-left:40px;">public static SingletonClass getInstance() {</div><div style="padding-left:80px;"> if(myInstance ==NULL) {</div><div style="padding-left:120px;">myInstance == new SingletonClass();</div><div style="padding-left:120px;">return myInstance;</div><div style="padding-left:80px;">}</div><div style="padding-left:80px;">else {</div><div style="padding-left:80px;">return myInstance;</div><div style="padding-left:80px;">}</div><div style="padding-left:40px;">}</div><div><span style="font-size: 30px;">}</span></div><div><b><span style="font-size: 30px;"><span style="--en-markholder:true;"><br/></span></span></b></div><div><b><span style="font-size: 30px;">get instance method </span></b></div><div><b><span style="font-size: 30px;">each private attribute</span></b></div><div><b><span style="font-size: 30px;"><span style="--en-markholder:true;"><br/></span></span></b></div><div><b><span style="font-size: 30px;">Where there is exactly one instance of a class created</span></b></div><div><b><span style="font-size: 30px;"><span style="--en-markholder:true;"><br/></span></span></b></div><div><b><span style="font-size: 30px;">if there is one cash register in the store that tracks the transactions</span></b></div><div><b><span style="font-size: 30px;"><span style="--en-markholder:true;"><br/></span></span></b></div><div><b><span style="font-size: 30px;">then every terminal will need access to that cash register</span></b></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Software Testing</title>
+    <created>20230420T194320Z</created>
+    <updated>20230425T194417Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>Unit Testing:</div><ul><ul><li><div>Who does it?</div></li><li><div>Typically, it is done by the individual developer</div></li></ul></ul><div><br/></div><div>In the past we have been doing testing manually, i.e. in our previous more basic courses</div><div><br/></div><div>In the 1980's, there was a time when you did what were called <b>non execution based testing </b>this was when computers weren't readily available.</div><div>Before that we would just look and inspect the code and find errors, manually, which still does work.</div><div>Code reviews are still done and usually are done to improve an existing code base.</div><div>Mostly we have done execution based testing</div><div><br/></div><div><b>Unit testing:</b></div><ul><li><div> individual methods or methods of a class and so on, hence the term, by units.</div></li></ul><div><br/></div><div><b>Integration testing:</b></div><ul><li><div> putting several units together and building a software component and then testing it out.</div></li><li><div>QA usually takes this role, testers, but this distinction between coding and quality insurance is disappearing.</div></li></ul><div><br/></div><h1>Two approaches to testing these cases -</h1><div><br/></div><div><b>Black box testing:</b></div><ul><li><div>You can't see the software and can't see the code</div></li><li><div>You test based on the specifications on what the code is suppose to do</div></li><li><div>Find test cases without knowing anything</div></li></ul><div><b>Clear box testing:</b></div><ul><li><div>You can see the software and  can see the code</div></li><li><div>Find test cases looking at the code</div></li></ul><div><b><span style="--en-markholder:true;"><br/></span></b></div><div><b>Combinatorial Explosion issue:</b></div><ul><li><div>Recall the approach in class 5<sup>18</sup> test cases, therefore, exhausting text cases is out</div></li></ul><div><br/></div><div><i>Equivalence testing is an alternative to exhaustive testing</i></div><div><i><span style="--en-markholder:true;"><br/></span></i></div><div><b>Equivalence classes:</b></div><div><b><span style="--en-markholder:true;"><br/></span></b></div><ul><li><div>Identify a range of data where the code behaves the same way, so you don't have to test for every data in that range.</div></li><ul><li><div>ex.) 1-100 if the value of the input is 1-100 the code will behave the same way, so we don't need to test each value because this range constitutes as an equivalence class</div></li></ul></ul><div><br/></div><ul><li><div>How many tests do you have?</div></li><ul><li><div>You have five tests per equivalence class</div></li><ol><li><div>Left Boundary (1)</div></li><li><div>Right Boundary (100)</div></li><li><div>One has to be within the range (let's say 50)</div></li><li><div>To the left of the left boundary (less than 1)</div></li><li><div>The fifth one has to be to the right of the right boundary (greater than 100)</div></li></ol></ul></ul><div><br/></div><div><i>This equivalence testing is still used in the industry</i></div><div><br/></div><div><b>Functional testing</b>: </div><ul><li><div>Tests the basic functions of the system work</div></li><li><div>Test for the greased path for each and every use case</div></li><li><div>Have to look for alternatives</div></li></ul><div><br/></div><div><b>Test Driven Development:</b></div><ul><li><div>Write the test cases before you even write the code</div></li></ul><div><br/></div><div><b>Cleanroom Technique:</b> </div><ul><li><div>Write code according to certain standards </div></li><li><div>The code is inspected</div></li></ul><div><br/></div><div><b>Regression Testing:</b></div><ul><li><div>You create a feature successfully and the customer is happy</div></li><li><div>Now they want another feature, so you need to release an update</div></li><li><div>Test the old code again, when you code in new features or update existing features</div></li><li><div>Keep old test cases</div></li><ul><li><div>Now the new software you test with old test cases</div></li></ul></ul><div><br/></div><div><b>Now with automated testing:</b></div><ul><li><div>You write a program to take on the task of testing.</div></li><li><div>You hardcode an expected result</div></li><li><div>Then the software will compare the true test with the expected test case and will let you know if you pass or fail.</div></li></ul><div><br/></div><div><b>Alpha Testing and Beta Testing:</b></div><ul><li><div>Alpha testing releases to a select few </div></li><li><div>Beta testing releases to the public and allows the developers to see real world errors to maintain their codebase for real releases</div></li></ul><div><br/></div><div><b>Performance Testing: </b></div><ul><li><div>Stress testing for volume and response time</div></li></ul><div><b>Load Testing:</b></div><ul><li><div><br/></div></li></ul><div><b>Acceptance Testing: </b></div><ul><li><div>Tests with actual data for correctness and robustness</div></li></ul><div style="padding-left:40px;"><br/></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Template Method Pattern</title>
+    <created>20230425T194502Z</created>
+    <updated>20230425T195304Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>Subclasses that do similar thing - eliminate code repetition</div><div>Hook methods that are called from the template method </div><div>When those hook methods are executed its how the child class executes them</div></en-note>      ]]>
+    </content>
+  </note>
+</en-export>

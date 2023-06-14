@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE en-export SYSTEM "http://xml.evernote.com/pub/evernote-export4.dtd">
+<en-export export-date="20230714T003714Z" application="Evernote" version="10.56.9">
+  <note>
+    <title>Authenticated Software Updates</title>
+    <created>20230419T200857Z</created>
+    <updated>20230419T201111Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><ul><li><div>Software updates pose a serious challenge</div></li><ul><li><div>If we apply subverted updates to our operating system, we can install malicious software, back doors and Trojan horses.</div></li></ul><li><div>Public-key cryptography provides an effective mechanism for authenticating software updates.</div></li></ul></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Block Ciphers and Stream Ciphers</title>
+    <created>20230419T204223Z</created>
+    <updated>20230424T203943Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>There are two ciphers</div><ol><li><div>Stream ciphers encrypt <b>bit by bit</b></div></li><li><div>Block ciphers encrypt fixed-sized <b>blocks of bits</b></div></li><ul><li><div>The block cipher takes the block of data and encrypts it into an equal-sized block of data</div></li><li><div>For example:</div></li><ul><li><div>DES worked with 64- bit blocks of data (Data Encryption Standard)</div></li><ul><li><div>Search space: 2<sup>56 </sup>(3)</div></li></ul><li><div>AES works on 128-bit blocks (Advanced Encryption Standard)</div></li><ul><li><div>Search space 2<sup>128</sup> Better more secure than DES</div></li><li><div>three different keys in AES 128 129 and 256</div></li></ul></ul></ul></ol><ul><li><div>bit size of the key is not dependent on the bit size of the block!</div></li></ul><div><br/></div><div>To apply a block cipher:</div><ul><li><div>break the data into block sized chunks</div></li><li><div>add padding as needed to match the data to the block size</div></li></ul><div><br/></div><div>The cipher text size must be equal to the plaintext</div><div>Main issue in the volume encryption</div><div><br/></div><div>Block ciphers suffer from a builtin shortcoming:</div><ul><li><div>If we feed a block cipher the same plaintext and the same key, it will always yield the same ciphertext.</div></li><li><div>By itself, this isn't a vulnerability, but it becomes a vulnerability when we encrypt  data that has <b>block-sized patterns in it.</b></div></li></ul><div>Solutions: </div><ul><li><div>Modes of operation ("modes" for short)</div></li><li><div>A mode mixes data together from two separate encryptions</div></li><li><div>This scrambles the result and eliminates the pattern of the cipher text</div></li></ul><div>Common modes:</div><div><b><span style="font-size: 24px;">Stream Ciphers</span></b></div><ul><li><div><b>Electronic codebook:</b> encrypts block by block without mixing</div></li><ul><li><div>every block of plaintext has a unique block of cipher text associated with it</div></li><li><div>rarely used because of the block-sized pattern problems</div></li></ul><li><div><b>Output feedback</b>: generates a key stream</div></li><ul><li><div>is a block cipher can be used to generate different <b>key streams </b>using the IV.</div></li><li><div>We must never encrypt two messages with the same <b> key stream</b></div></li><li><div>OFB introduces an extra data item, the initialization vector or the IV</div></li></ul><li><div><b>Counter</b>: generates a key stream</div></li><li><div><b>Cipher feedback</b>: a mix of block and cipher text</div></li><ul><li><div>Combines properties of stream ciphers and block ciphers</div></li></ul><li><div><b>Cipher block chaining</b>(CBC):</div></li><ul><li><div><span style="color:rgb(102, 102, 102);">One in which a sequence of bits are encrypted as a single unit, or block, with a cipher key applied to the entire block.</span></div></li><li><div><span style="color:rgb(102, 102, 102);">Cipher block chaining uses what is known as an initialization vector IV of a certain length. </span></div></li><ul><li><div><span style="color:rgb(102, 102, 102);">By using this along with a single encryption key, organizations and individuals can safely encrypt and decrypt large amounts of plaintext</span></div></li></ul></ul></ul></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Certificate Authority</title>
+    <created>20230419T200603Z</created>
+    <updated>20230419T200751Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><ul><li><div>Who does sign a public key certificate?</div></li><ul><li><div>Often the signer is a trusted third party, a person or organization whom we trust for certain things</div></li></ul><li><div>In the world of certificates, the trusted third party is often a<b> certificate authority (CA)</b></div></li><ul><li><div>This is a person or entity that issues certificates on behalf of some organization</div></li></ul></ul></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Cryptonets</title>
+    <created>20230410T195547Z</created>
+    <updated>20230410T201008Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div><br/></div><div>• Cryptonet: The people or devices that share the same secret</div><div>key.</div><div><br/></div><div>• Our keys are safest when we keep the cryptonet as small</div><div>as possible.</div><div><br/></div><div>• A cryptonet is a classic example of Transitive Trust.</div><div>– We trust everyone in the cryptonet to keep the encryption</div><div>key safe.</div><div>– We also end up trusting anyone whom those people trust.</div><div>Key-Sharing Procedures</div><div><br/></div><div>• After we establish who needs to use the keys, we need</div><div>procedures to choose, handle, and distribute the keys</div><div>safely.</div><div>– Do we need to plan for changing the key (rekeying)?</div><div>– How long does a key last? cryptoperiod?</div><div>– Key strength questions (these must be considered</div><div>together):</div><div>• Should the key be a password or a passphrase?</div><div>• How should the key be protected against a strong</div><div>threat?</div><div>• If we write the key down, will a threat have access to it?</div><div>• Should we limit ourselves to keys we can memorize?</div><div>Rekeying: changing “old” keys</div><div>• We make the cryptanalyst's job easier if we use the same</div><div>key to re-encrypt the file after making changes.</div><div>• Rekeying or key rollover: is the process of changing the key.</div><div>• Cases in which we should rekey:</div><div>– We use the document regularly over a long period of</div><div>time.</div><div>• Each time we use the key, we introduce the risk of leaking it.</div><div>– We suspect that the key has been leaked.</div><div>– A person who knows the key must leave the cryptonet.</div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Design Issues: Volume Encryption</title>
+    <created>20230424T202844Z</created>
+    <updated>20230424T205023Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div><b>Full Disk Encryption (FDE) Features:</b></div><ul><li><div>Strong encryption can be reliable encrypt trillions of bytes of data</div></li><li><div>Large keys: Strong modern ciphers require large random encryption keys</div></li><li><div>High speed: Use on key, switching between several keys causes severe delays awaiting key expansion</div></li><li><div>Suppressing data patterns use a mode that mixes data during the encryption to suppress duplication in cipher text</div></li><li><div>Plain text size = cipher text size: File system (FS) assumes full control on disk</div></li><ul><li><div>1:1 due to the file system</div></li></ul></ul></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Diffie-Hellman</title>
+    <created>20230410T203530Z</created>
+    <updated>20230429T232255Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><ul><li><div>D-H lets two endpoints share a single secret value without sending any secrets back and forth.</div></li><li><div> Although this doesn't actually encrypt information, it provides a shared secret.</div></li><li><div>The endpoints then use the shared secret as a key in a symmetric cipher like AES</div></li><li><div>Both participants must have a public/private key pair.</div></li><li><div> Each one multiplies their own private key by the other's public key to compute the shared secret.</div></li></ul><div style="padding-left:40px;"><i>The Basic Math: D-H</i></div><div style="padding-left:40px;"><b>P = g<sup>s</sup> mod N</b></div><ul><li><div>p is the public key</div></li><li><div>s is the private key randomly chose less than N</div></li><li><div>g is a public shared value often g = 2</div></li><li><div>N is a very large prime number</div></li><li><div>G and N shared between users incredibly </div></li><li><div>Discrete logarithm problem the log is the inverse of exponentiation but the prime modulus make the exponentiation hard to invert.</div></li><li><div>Both participants must have a public and private key pair</div></li><li><div>Each one multiplies their own private key by the other's  public key to compute the shared secret<span style="color:rgba(0, 0, 0, 0);"> must have a public/private key pair.</span></div></li></ul><div><br/></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Digital Signatures</title>
+    <created>20230417T203259Z</created>
+    <updated>20230424T205046Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><ul><li><div>What does it mean for you to encrypt data with your private key an share that with others?</div></li><ul><li><div>It means that anyone with your public key can decrypt the data</div></li></ul><li><div>It doesn't keep the encrypted data secret</div></li><ul><li><div>but it demonstrates that the owner of the private key was the one who encrypted the data.</div></li></ul><li><div>A digital signature uses asymmetric keys to sign or verify digital data.</div></li><li><div>Create a digital signature with two cryptographic building blocks4</div></li></ul></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Effectiveness of access control and encryption</title>
+    <created>20230419T203542Z</created>
+    <updated>20230424T195052Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><ul><li><div>Hostile users</div></li><ul><li><div>logged in useres trying to steal information from other users</div></li></ul><li><div>Trojans</div></li><ul><li><div>trojan horse applications</div></li></ul><li><div>Trojan crypto</div></li><ul><li><div>trojan software embedded in the crypto software</div></li></ul><li><div>External files</div></li><ul><li><div>files that we copy onto removable storage and carry to other computers</div></li></ul><li><div>Lost control</div></li><ul><li><div>if attackers take physical control of the computer and physically disassemble it to attack the hard drive</div></li></ul><li><div>Theft</div></li><ul><li><div> this is the ultimate case of lost control</div></li></ul><li><div>Recycling</div></li><ul><li><div>when we want to sell discard, or recycle the drive, do our files remain protected so that a scavenger new owner can't recover them</div></li></ul><li><div><span style="font-size: 16px;">Access control</span></div></li><ul><li><div><span style="font-size: 16px;">plays a role on computers where we have to protect data against hostile users</span></div></li></ul><li><div><span style="font-size: 16px;">File encryption </span></div></li><ul><li><div><span style="font-size: 16px;">could be used as an alternative to access control</span></div></li></ul></ul></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Encrypting Volumes - Securing a Volume</title>
+    <created>20230419T201430Z</created>
+    <updated>20230419T204018Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><ul><li><div>The word volume here refers to a block of drive storage that contains its own file system</div></li><li><div>It could be an:</div></li><ul><li><div>HDD, full- disk encryption (FDE)</div></li><li><div>single drive</div></li><li><div>removable USB</div></li></ul></ul><div><br/></div><div><br/></div><div style="padding-left:120px;">&lt;----        Decrypt     &lt;----</div><div>&lt;-   PC                                                     </div><div><br/></div><div>   Encrypted Volume</div><div>|</div><div>|                            ---->        Encrypt      ---> </div><div>-></div><div>           Secret key -----------^</div><div><span style="--en-markholder:true;"><br/></span></div><div><b><span style="font-size: 36px;">Risks to volumes</span></b></div><ul><li><div><span style="font-size: 16px;">Volume encryption is convenient, but it does not solve evry security problem</span></div></li><li><div><span style="font-size: 16px;">There are three general risks we address with volume encryption:</span></div></li><ol><li><div><span style="font-size: 16px;">Losing the storage device</span></div></li><li><div><span style="font-size: 16px;">An eavesdropper that looks at the volume without the operating system in place</span></div></li><li><div><span style="font-size: 16px;">Discarding a hard drive or other device without wiping it</span></div></li></ol></ul><div><span style="font-size: 16px;"><span style="--en-markholder:true;"><br/></span></span></div><div><b><span style="font-size: 36px;">Risks and Policy</span></b></div><div><span style="font-size: 16px;">We have three practical security measures</span></div><ol><li><div><span style="font-size: 16px;">Access controls enforced by the operating system</span></div></li><li><div><span style="font-size: 16px;">File Encryption using an application program</span></div></li><li><div><span style="font-size: 16px;">Drive encryption</span></div></li></ol><div><br/></div><div><b><span style="font-size: 16px;"><span style="--en-markholder:true;"><br/></span></span></b></div><div><span style="font-size: 16px;">Access control</span></div><div><span style="font-size: 16px;">plays a role on computers where we have to protect data against hostile users</span></div><div><b><span style="font-size: 16px;"><span style="--en-markholder:true;"><br/></span></span></b></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Evolution of DES</title>
+    <created>20230424T195058Z</created>
+    <updated>20230424T195823Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><ul><li><div>DES is a block cipher that works on 64 bit blocks using a 56 bit key </div></li><li><div>The principle weakness in DES is its key size</div></li><li><div>To minimalize the risk of the 56 bit encryption key, some organizations tried applying DES several times with different keys</div></li><li><div>Main shortcoming is the length of the key</div></li><ul><li><div>So they extended the key size by putting three DES keys: 168(56*3) key size in a 192 bit block (64*3)</div></li></ul></ul></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Final Exam</title>
+    <created>20230427T211040Z</created>
+    <updated>20230509T071558Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div style="--en-task-group:true; --en-id:7c15c538-608b-462d-a2b2-7ffaf8fd6b7b;--en-content-hash:481a2181a1a5445f0f3e79f9e7e93e0f;-webkit-user-modify:read-only;-moz-user-modify:read-only;user-modify:read-only;border-radius:3px;border:1px solid rgba(182,182,182,0.09);background:rgba(174,174,174,0.09);overflow:hidden;color:#868686"><div style="background:rgba(182,182,182,0.09) no-repeat 6px 6px url(&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzg2ODY4NiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5LjcyNTEgMjBDMjAuMTgxIDIwIDIwLjYwMTEgMTkuNzU2IDIwLjgyOSAxOS4zNkMyMS4wNTcgMTguOTY0IDIxLjA1NyAxOC40NzYgMjAuODI5IDE4LjA4TDEzLjEwMzEgNC42Mzk5OUMxMi44NzYgNC4yNDM5OSAxMi40NTUxIDQgMTIgNEMxMS41NDQ5IDQgMTEuMTI0IDQuMjQzOTkgMTAuODk2MSA0LjYzOTk5TDMuMTcwOTggMTguMDhDMi45NDMwMSAxOC40NzYgMi45NDMwMSAxOC45NjQgMy4xNzA5OCAxOS4zNkMzLjM5ODEgMTkuNzU2IDMuODE4OTMgMjAgNC4yNzQwOCAyMEgxOS43MjUxWk00Ljg2NDg5IDE4LjRMMTIgNS45ODc5OEwxOS4xMzUxIDE4LjRINC44NjQ4OVoiLz4KPHBhdGggZD0iTTEyLjc1IDEwLjU3NTJDMTIuNzUgMTAuMTYxIDEyLjQxNDIgOS44MjUyMyAxMiA5LjgyNTIzQzExLjU4NTggOS44MjUyMyAxMS4yNSAxMC4xNjEgMTEuMjUgMTAuNTc1MlYxMy4yOTc5QzExLjI1IDEzLjcxMjEgMTEuNTg1OCAxNC4wNDc5IDEyIDE0LjA0NzlDMTIuNDE0MiAxNC4wNDc5IDEyLjc1IDEzLjcxMjEgMTIuNzUgMTMuMjk3OVYxMC41NzUyWiIvPgo8cGF0aCBkPSJNMTIuODc1IDE1Ljk1MTFDMTIuODc1IDE2LjQzNDQgMTIuNDgzMiAxNi44MjYxIDEyIDE2LjgyNjFDMTEuNTE2OCAxNi44MjYxIDExLjEyNSAxNi40MzQ0IDExLjEyNSAxNS45NTExQzExLjEyNSAxNS40Njc5IDExLjUxNjggMTUuMDc2MSAxMiAxNS4wNzYxQzEyLjQ4MzIgMTUuMDc2MSAxMi44NzUgMTUuNDY3OSAxMi44NzUgMTUuOTUxMVoiLz4KPC9zdmc+Cg==&quot;);padding:8px 38px;font-weight:600">Content not supported</div><div style="padding:2px 6px;margin: 1em">This block is a placeholder for Tasks, which has been officially released on the newest version of Evernote and is no longer supported on this version. Deleting or moving this block may cause unexpected behavior in newer versions of Evernote.</div></div><div><br/></div></en-note>      ]]>
+    </content>
+    <task>
+      <title>Friday, May 5th, 2023 , 3:30-5:30</title>
+      <created>20230501T171533Z</created>
+      <updated>20230509T071558Z</updated>
+      <taskStatus>completed</taskStatus>
+      <taskFlag>false</taskFlag>
+      <sortWeight>B</sortWeight>
+      <noteLevelID>4b304c79-c500-4353-a9e9-2b0214e3ff6f</noteLevelID>
+      <taskGroupNoteLevelID>7c15c538-608b-462d-a2b2-7ffaf8fd6b7b</taskGroupNoteLevelID>
+      <dueDate>2757600913T000000Z</dueDate>
+      <statusUpdated>20230509T071558Z</statusUpdated>
+      <creator>240631200</creator>
+      <lastEditor>240631200</lastEditor>
+    </task>
+  </note>
+  <note>
+    <title>Key &quot;Splitting&quot;</title>
+    <created>20230410T201349Z</created>
+    <updated>20230410T201753Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>The simplest technique for key wrapping is called key</div><div>splitting.</div><div><br/></div><ul><li><div>It uses xor to perform the wrapping</div></li><li><div>We can use the same encryption algorithm for both, but not necessarily.</div></li><li><div>Because the CEK and KEK are chosen randomly, we can safely use the simplest possible encryption algorithm: <b>xor</b></div></li></ul><div style="text-align:start;"><br/></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Key Wrapping: Another Building Block</title>
+    <created>20230410T195535Z</created>
+    <updated>20230410T201133Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div><br/></div><ul><li><div>Generate a new, random internal key whenever we</div></li><li><div>encrypt the file.</div></li><li><div>We then encrypt the key itself using the passphrase. We</div></li><li><div>call this key wrapping.</div></li><li><div>Key wrapping uses two separate and unrelated keys</div></li><li><div>to encrypt the file.</div></li><li><div>Content Encryption Key (CEK): used to encrypt the actual</div></li><li><div>data.</div></li><li><div>Key Encrypting Key (KEK): Produced using passphrase and</div></li><li><div>used to wrap the CEK.</div></li></ul></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Local Area Network LAN</title>
+    <created>20230501T194455Z</created>
+    <updated>20230501T202401Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><ol><li><div>Wired</div></li><ul><li><div>Uses cables containing twisted pairs of wires and telephone-style "Registered Jack" RJ-45 plugs and jacks</div></li><li><div>Here are networks commonly seen in household and small business computing equipment:</div></li><ul><li><div>1000base T - 1000 m/sec using RJ-45</div></li><li><div>100baseT - 100mb/sec, using RJ-45</div></li><li><div>10baseT - 10mb/sec, using RJ-45</div></li></ul><li><div>Faster networks may use <b>optical fiber</b> instead of <b>copper wires</b></div></li><li><div>Wired LAN always runs faster and more reliable than Wireless LAN</div></li></ul><li><div>Wireless</div></li><ol><li><div>In 1997 the first WLAN protocol IEEE 802.11 released</div></li></ol></ol><div><br/></div><div><br/></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Programming in C</title>
+    <created>20230427T211029Z</created>
+    <updated>20230427T211040Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>Programmin in C</div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Public-key Certificates</title>
+    <created>20230419T200314Z</created>
+    <updated>20230419T200605Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div><br/></div><ul><li><div>Public key certificate is the process in which we embed public keys in specially constructed credentials </div></li><ul><li><div>Digital signature is used to verify a certificate's integrity</div></li></ul></ul><div><br/></div><div style="padding-left:40px;"><b>At minimum a certificate contains three pieces of information:</b></div><ol><li><div>a public key</div></li><li><div>name of the public key's owner</div></li><li><div>a digital signature that covers the name andthe public key</div></li></ol></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Public-Key Cryptography</title>
+    <created>20230410T201753Z</created>
+    <updated>20230410T203157Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><ul><li><div>When we encrypt with a secret key algorithm, the security resides in the key, and our data remains secret if our key remains secret.</div></li><li><div> We often call this secret-key cryptography.</div></li><li><div>With public-key cryptography, clever mathematics allow us to share a crypto key publicly and still keep information safe.</div></li></ul><div><b>Two essential main points:</b></div><div>–<i> The first essential point:</i></div><div> when the sender</div><div>uses the public key, the</div><div>recipient must use</div><div>the private key.</div><div>– We use two keys and the</div><div>keys are different, we</div><div>call this asymmetric</div><div>cryptography.</div><div>• Note:</div><div>– Eve, like everyone else, can retrieve Alice's public key. When she</div><div>tries to use it to decrypt Bob's message, all she sees is garbage.</div><div><span style="--en-markholder:true;"><br/></span></div><div><i> The second essential point is that we create the private</i></div><div><i>key first.</i></div><div>• We derive the public key from the private key.</div><div>• The private key may be</div><div>– any random number within a particular range</div><div>– Or, calculated from one or more randomly</div><div>selected values</div><div><br/></div><div><br/></div><div><br/></div><ul><li><div> All public-key algorithms rely on a mathematical trick.</div></li><li><div>The algorithms use mathematical functions that are relatively easy to calculate but very difficult to invert.</div></li><li><div> Asymmetric algorithms fit into categories according to</div></li></ul><div style="padding-left:40px;">  the mathematics they use</div><div style="text-align:start;"><br/></div><div><br/></div><div><br/></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Publishing Public Keys</title>
+    <created>20230419T195508Z</created>
+    <updated>20230419T195925Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><ul><li><div>Key cracking isn't the only risk in public key cryptography</div></li><li><div>There is a trick in which an attacker actively intercepts all traffic.</div></li><ul><li><div>This if often called a man-in-the-middle attack Also known as the bucket brigade attack</div></li></ul><li><div>Third trusted party private key in other words a digital signature, there should be a trusted third party that issues public certifications for the keys</div></li><li><div><br/></div></li></ul></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>RSA: Rivest-Shamir-Adleman</title>
+    <created>20230417T200929Z</created>
+    <updated>20230417T202503Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div><span style="font-size: 24px;"><span style="color:#929292;"><span style="--en-markholder:true;"><br/></span></span></span></div><ul><li><div>Is a flexible technique that performs asymmetric encryption and decryption </div></li><li><div>Encryption and decryption are a matter of which keys we use.</div></li><li><div>We can freely switch between encrypting with the public or private keys as long as we decrypt with the other key:</div></li><ul><li><div>We can encrypt with the public key and to decrypt we cause the private key</div></li><li><div>We can encrypt with the private key and to decrypt, we use the public key</div></li></ul></ul><div><br/></div><div><b>Basic Math: RSA</b></div><div><b><span style="--en-markholder:true;"><br/></span></b></div><ul><li><div>RSA public and private keys both consist of pairs on numbers.</div></li><li><div>Each pair contains two of the following:</div></li><ul><li><div>N: the modulus, part of bother RSA key pairs</div></li><li><div>e: the public exponent, part of the RSA public key</div></li><li><div>d: e's modular inverse, the secret part of the private key</div></li></ul><li><div>Given a message M, RSA produces ciphertext C as follows: </div></li><ul><li><div>C = M<sup>e</sup> mod N</div></li></ul><li><div>Decryption: simply raise the ciphertext C to the power of d</div></li><ul><li><div>M = C<sup>d</sup> mod N</div></li></ul></ul><div><br/></div><div><b>Encapsulating Keys with RSA</b></div><ul><li><div>The Message is encrypted with a secret AES key and wraps that key with RSA</div></li><li><div>To read the message, reverses the process,  as shown in this figure</div></li></ul><div><sup><span style="--en-markholder:true;"><br/></span></sup></div><div><br/></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Separation of Duty: A Principle</title>
+    <created>20230410T195629Z</created>
+    <updated>20230410T201234Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div><span style="font-family: &quot;Helvetica Neue&quot;;"><span style="font-size: 16px;"><i><span style="color:rgb(0, 0, 0);"><span style="--en-markholder:true;"><br/></span></span></i></span></span></div><div><br/></div><hr/><div><b><span style="font-size: 18px;">Introduction</span></b></div><ol><li><div><span style="font-family: &quot;Helvetica Neue&quot;;"><span style="font-size: 14px;">Sentence to get the attention of your readers:</span></span></div></li><li><div>One-sentence thesis statement:</div></li></ol><div><br/></div><div><b><span style="font-size: 18px;">Body</span></b></div><ol><li><div><span style="font-size: 18px;">We often have cases where we cant allow a person to act alone and take a serious action</span></div></li><li><div><span style="font-size: 18px;">CEK - Content Encryption key</span></div></li><li><div><span style="font-size: 18px;">KEK -Key Encryption Key</span></div></li></ol><div><span style="font-size: 18px;"><span style="--en-markholder:true;"><br/></span></span></div><div><span style="font-size: 18px;">For example:</span></div><div><span style="font-size: 18px;"><i>Bob only wants Alice and Tina to look at the encrypted file if both are present</i></span></div><div><span style="font-size: 18px;"><i><span style="--en-markholder:true;"><br/></span></i></span></div><div><b><span style="font-size: 18px;">To implement separation of duty we use key splitting</span></b></div><div><span style="font-size: 18px;"><span style="--en-markholder:true;"><br/></span></span></div><ul><li><div><span style="font-size: 18px;">Generate CEK as usual</span></div></li><li><div><span style="font-size: 18px;">Encrypt the file as usual</span></div></li><li><div><span style="font-size: 18px;">Generate another random key, called S1</span></div></li><li><div><span style="font-size: 18px;">Compute CEK xor S1 to yield S2</span></div></li><li><div><span style="font-size: 18px;">Wrap S1 with Alice's passphrase KEK</span></div></li><li><div><span style="font-size: 18px;">Wrap S2 with Tina's passphrase KEK</span></div></li></ul><div><br/></div><div><span style="font-size: 18px;">They can't decrypt the file unless both provide their passphrases one after the other</span></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>The Key Management Challenge</title>
+    <created>20230410T195607Z</created>
+    <updated>20230417T195309Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>When we encrypt a file, we substitute the</div><div>problem of protecting the file with the problem</div><div>of protecting its key.</div><div><br/></div><div>• Cryptography gives us no protection if somehow</div><div>threats can guess or retrieve the keys.</div><div><br/></div><div>• We face three key management problems:</div><div>– Sharing keys with exactly the right people, no</div><div>more or less</div><div>– Choosing keys that attackers can't guess</div><div>– Handling keys so attackers can't guess or</div><div>intercept them</div><div><br/></div><div><br/></div><div>• key distribution problem</div><div>• store the keys safely</div><div>• use our keys and cryptographic mechanisms effectively</div><div><br/></div><div>Elliptic Curve Algorithm</div><div style="text-align:start;"><br/></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Wiring a Small Network</title>
+    <created>20230501T195434Z</created>
+    <updated>20230501T202402Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>To build a small network, we connect to one of these types of nodes:</div><div><br/></div><ol><li><div>Hub</div></li><ul><li><div>High speed node that broadcasts using ethernet LAN protocols</div></li></ul><li><div>Switch</div></li><ul><li><div>Lower speed node to share ethernet package among connected hosts. (more secure)</div></li></ul></ol><div><br/></div><div style="padding-left:40px;">Ethernet Frame Format:</div><ul><ul><li><div>Once a LAN interface receives an Ethernet packet, it interprets the contents</div></li><li><div>This is the Ethernet II format, which is the common format in modern LANs</div></li><li><div>Destination MAC---------------6 bytes </div></li><li><div>Source MAC---------------------6 bytes</div></li><li><div>Packet Type -------------------- 2 bytes</div></li><li><div>Data field------------------------46 to 1600 byes</div></li><li><div>CRC -------------------------------4 bytes (checksum)</div></li></ul></ul><div>Transmitting Data</div></en-note>      ]]>
+    </content>
+  </note>
+</en-export>

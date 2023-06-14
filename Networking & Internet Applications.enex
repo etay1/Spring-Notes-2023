@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE en-export SYSTEM "http://xml.evernote.com/pub/evernote-export4.dtd">
+<en-export export-date="20230714T003651Z" application="Evernote" version="10.56.9">
+  <note>
+    <title>Antennas</title>
+    <created>20230424T162600Z</created>
+    <updated>20230424T165155Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>Coverage areas vary based on the type of antenna used in a wireless AP or wireless router. Most home and small business wireless APs have fixed antenna, where as enterprise-class APs support different antenna types.</div><div>Factors that affect antenna effectiveness include the following </div><ul><li><div>Distance </div></li><li><div>coverage pattern</div></li><li><div>environment</div></li><li><div>interference with other APIs</div></li></ul><div>Two types</div><ol><li><div>Unidirectional: Unidirectional antennas focus their power in a specific direction</div></li><li><div>Omnidirectional: antennas send in ALL directions</div></li></ol><div><br/></div><div><b><span style="font-size: 24px;">Frequencies and Channels</span></b></div><div><span style="font-size: 16px;"><span style="--en-markholder:true;"><br/></span></span></div><div><span style="font-size: 16px;">There are a large number of wireless standards under IEE 802.11 One of the characteristics that differentiates the standards is the frequency range</span></div><div><span style="font-size: 16px;"><span style="--en-markholder:true;"><br/></span></span></div><div><span style="font-size: 16px;">Two of these bands are commonly used for WLANs</span></div><div><span style="font-size: 16px;"><span style="--en-markholder:true;"><br/></span></span></div><div><span style="font-size: 16px;">2.4GHz to 2.5GHz</span><b><span style="font-size: 16px;">: 2.4 GHz band</span></b></div><div><span style="font-size: 16px;">5.75GHz to 5.875GHz: </span><b><span style="font-size: 16px;">5GHz band</span></b></div><div><b><span style="font-size: 16px;"><span style="--en-markholder:true;"><br/></span></span></b></div><div><span style="font-size: 16px;">What are channels though?</span></div><div><span style="font-size: 16px;">Channels can be regarded as conversations</span></div><div><span style="font-size: 16px;">22 MHz</span></div><div><span style="font-size: 16px;">Higher bitrate you want higher bandwidth</span></div><div><span style="font-size: 16px;">Bandwidth: frequency range of a signal</span></div><div><span style="font-size: 16px;">Bit rate is for the network </span></div><div><span style="font-size: 16px;">in 2.4 GHz band there is no overlapping</span></div><div><span style="font-size: 16px;"><span style="--en-markholder:true;"><br/></span></span></div><div><span style="font-size: 16px;">Frequency No overlapping: 1,6,11,14</span></div><div><span style="font-size: 16px;"><span style="--en-markholder:true;"><br/></span></span></div><div><span style="font-size: 16px;">Not the same as coverage overlapping</span></div><div><span style="font-size: 16px;"><span style="--en-markholder:true;"><br/></span></span></div><div><span style="font-size: 16px;">10-15% average overlap in coverage area for non-overlapping channels</span></div><div><span style="font-size: 16px;"><span style="--en-markholder:true;"><br/></span></span></div><div><span style="font-size: 16px;"><span style="--en-markholder:true;"><br/></span></span></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Circuit VS Packet Switching</title>
+    <created>20230501T163505Z</created>
+    <updated>20230501T172301Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div style="padding-left:40px;">Two types of connection what is different?</div><div style="padding-left:40px;">Circuit switch connection needs a longer set up time</div><div style="padding-left:40px;">Packet switch is like routing if the user doesn't use it </div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>CSMA/CA</title>
+    <created>20230424T165208Z</created>
+    <updated>20230503T170321Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><ul><li><div>Wired Ethernet uses CSMA/CA to control access to the medium (listen then talk). In wireless, collision cannot be detected</div></li><li><div>A WLAN use a similar technology called carrier sense multiple access/ collision avoidance</div></li><li><div>In CSMA, a WLABN device listens for a transmission on a a wireless channel to determine whether it is safe to transmit. If the channel is clear, then it transmits. This is similar to wired Ethernet</div></li><ul><li><div>Unfortunately collision detection is not easy in wireless network</div></li></ul><li><div>Carrier-sense multiple access with collision avoidance</div></li></ul><div><br/></div><div>Frequency-Division Multiple Access (FDMA)</div><div>Time-Division Multiple Access (TDMA)</div><div>Code-Division Multiple Access  (CDMA)</div><div><br/></div><div>CDMA is based on coding theory</div><div>Each sender is assigned a code, which is a sequence of numbers called chips.</div><div>Based on DSSS (Direct sequence spread spectrum)</div><div>This key is for data communication, not for encryption or decryption (different level)</div><div>This key is for physical level (first level) For the data link layer / physical layer (communication level)</div><div><br/></div><div>Three variations of spread spectrum technology:</div><ol><li><div>Direct sequence spread spectrum (DSSS)</div></li><ul><li><div>Modulates data over an entire range of frequencies</div></li><li><div>the chip rate is much higher than the information signal bit rate</div></li></ul><li><div>Frequency-hopping spread spectrum (FHSS)</div></li><ul><li><div>Devices hop between predetermined frequencies or channels</div></li></ul><li><div>Orthogonal frequency- division multiplexing (OFDM)</div></li><ul><li><div>Uses a relatively slow modulation rate combined with the simultaneous transmission of data over 52 data streams</div></li></ul></ol></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>DHCP</title>
+    <created>20230503T170322Z</created>
+    <updated>20230503T170553Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><ol><li><div><span style="color:rgb(4, 12, 40);">Server </span><b><span style="color:rgb(4, 12, 40);">Discovery</span></b></div></li><li><div><span style="color:rgb(4, 12, 40);">IP lease </span><b><span style="color:rgb(4, 12, 40);">Offer</span></b></div></li><li><div><span style="color:rgb(4, 12, 40);">IP lease </span><b><span style="color:rgb(4, 12, 40);">Request </span></b></div></li><li><div><span style="color:rgb(4, 12, 40);">IP lease </span><b><span style="color:rgb(4, 12, 40);">Acknowledgement</span></b></div></li></ol><div>c</div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Final Exam</title>
+    <created>20230503T163901Z</created>
+    <updated>20230503T171144Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>CSMA/CA VS CD</div><div>ICMP</div><div>Network Peers</div><div>OFDM</div><div>wireless wifi protocol family</div><div>ascii code</div><div>ipv6 is designed to improve the drawback of ipv4</div><div>how to aggregate the </div><div>what is TCP what is UDP layer 4</div><div>what is DNS</div><div>DHCP</div><div>ISDN typical connection technologies for the circuit switch connection</div><div>ATM - 5+48</div><div>how to calculate transmission rate if given a t1 diagram, 193 bits over 125 ms</div><div>user port should be > 48k so that it follows the network protocol</div><div>tcp header there are six flags, these six flags are used for tcp three way handshake used to establish the tcp connection</div><div>four way handshake is used for terminating the tcp connection</div><div><br/></div><div>SMITH 111 8-10AM</div><div>two types of routing protocols</div><div>distance vector - exchange the routing table </div><div>EIGRP -> hybrid</div><div>OSPF -> Dijkstra's Algorithm -> Link state</div><div><br/></div><div><b><span style="color:rgb(4, 12, 40);">DNS </span></b></div><div><b><span style="color:rgb(4, 12, 40);">FTP</span></b></div><div><b><span style="color:rgb(4, 12, 40);">SSH</span></b></div><div><b><span style="color:rgb(4, 12, 40);">SMTP</span></b></div><div><b><span style="color:rgb(4, 12, 40);">TELNET</span></b></div><div><b><span style="color:rgb(4, 12, 40);">HTTP</span></b></div><div><b><span style="color:rgb(4, 12, 40);">HTTPS</span></b></div><div><b><span style="color:rgb(4, 12, 40);">PORT 3</span></b></div><div><b><span style="color:rgb(4, 12, 40);">port number lower than 1k-48k is reserved</span></b></div><div><b><span style="color:rgb(4, 12, 40);"><span style="--en-markholder:true;"><br/></span></span></b></div><div><span style="color:rgb(4, 12, 40);">rs232 </span></div><div><span style="color:rgb(4, 12, 40);">mac address - ipv4 ipv6 what is the size, how many digits, how many segments for ipv6</span></div><div><span style="color:rgb(4, 12, 40);">each segment you have two bytes so its 8 segments</span></div><div><span style="color:rgb(4, 12, 40);">rj45</span></div><div><span style="color:rgb(4, 12, 40);">rj11 how may pairs - 8 pairs - how many pins twisted pair</span></div><div>ISIS INTERMEDIATE SYSTEM TO INTERMEDIATE SYSTEM</div><div><br/></div><div>Basic Routing - Directed connected</div><ol><li><div>default route</div></li><li><div>static route</div></li></ol><div><br/></div><div>Administrative Distance</div><div>common records in dns server and there is a c name canonical name - alias name</div><div>mx for email exchange or aaaa indicates its ipv6 translation</div><div><br/></div><div>100BaseT</div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Final Exam</title>
+    <created>20230501T165221Z</created>
+    <updated>20230501T231320Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div style="--en-task-group:true; --en-id:9ac78550-fc6f-4105-acac-765cc580bbcb;--en-content-hash:d7e6502b190d225a1f97c9cba4b80ad3;-webkit-user-modify:read-only;-moz-user-modify:read-only;user-modify:read-only;border-radius:3px;border:1px solid rgba(182,182,182,0.09);background:rgba(174,174,174,0.09);overflow:hidden;color:#868686"><div style="background:rgba(182,182,182,0.09) no-repeat 6px 6px url(&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzg2ODY4NiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5LjcyNTEgMjBDMjAuMTgxIDIwIDIwLjYwMTEgMTkuNzU2IDIwLjgyOSAxOS4zNkMyMS4wNTcgMTguOTY0IDIxLjA1NyAxOC40NzYgMjAuODI5IDE4LjA4TDEzLjEwMzEgNC42Mzk5OUMxMi44NzYgNC4yNDM5OSAxMi40NTUxIDQgMTIgNEMxMS41NDQ5IDQgMTEuMTI0IDQuMjQzOTkgMTAuODk2MSA0LjYzOTk5TDMuMTcwOTggMTguMDhDMi45NDMwMSAxOC40NzYgMi45NDMwMSAxOC45NjQgMy4xNzA5OCAxOS4zNkMzLjM5ODEgMTkuNzU2IDMuODE4OTMgMjAgNC4yNzQwOCAyMEgxOS43MjUxWk00Ljg2NDg5IDE4LjRMMTIgNS45ODc5OEwxOS4xMzUxIDE4LjRINC44NjQ4OVoiLz4KPHBhdGggZD0iTTEyLjc1IDEwLjU3NTJDMTIuNzUgMTAuMTYxIDEyLjQxNDIgOS44MjUyMyAxMiA5LjgyNTIzQzExLjU4NTggOS44MjUyMyAxMS4yNSAxMC4xNjEgMTEuMjUgMTAuNTc1MlYxMy4yOTc5QzExLjI1IDEzLjcxMjEgMTEuNTg1OCAxNC4wNDc5IDEyIDE0LjA0NzlDMTIuNDE0MiAxNC4wNDc5IDEyLjc1IDEzLjcxMjEgMTIuNzUgMTMuMjk3OVYxMC41NzUyWiIvPgo8cGF0aCBkPSJNMTIuODc1IDE1Ljk1MTFDMTIuODc1IDE2LjQzNDQgMTIuNDgzMiAxNi44MjYxIDEyIDE2LjgyNjFDMTEuNTE2OCAxNi44MjYxIDExLjEyNSAxNi40MzQ0IDExLjEyNSAxNS45NTExQzExLjEyNSAxNS40Njc5IDExLjUxNjggMTUuMDc2MSAxMiAxNS4wNzYxQzEyLjQ4MzIgMTUuMDc2MSAxMi44NzUgMTUuNDY3OSAxMi44NzUgMTUuOTUxMVoiLz4KPC9zdmc+Cg==&quot;);padding:8px 38px;font-weight:600">Content not supported</div><div style="padding:2px 6px;margin: 1em">This block is a placeholder for Tasks, which has been officially released on the newest version of Evernote and is no longer supported on this version. Deleting or moving this block may cause unexpected behavior in newer versions of Evernote.</div></div><div><br/></div></en-note>      ]]>
+    </content>
+    <task>
+      <title>Friday ,May 5th, 2023 @ 8:00 AM</title>
+      <created>20230501T172309Z</created>
+      <updated>20230501T191006Z</updated>
+      <taskStatus>open</taskStatus>
+      <taskFlag>false</taskFlag>
+      <sortWeight>B</sortWeight>
+      <noteLevelID>a711cbc3-9bef-4119-9a13-f5fb1166b240</noteLevelID>
+      <taskGroupNoteLevelID>9ac78550-fc6f-4105-acac-765cc580bbcb</taskGroupNoteLevelID>
+      <dueDate>2757600913T000000Z</dueDate>
+      <statusUpdated>20230501T172309Z</statusUpdated>
+      <creator>240631200</creator>
+      <lastEditor>240631200</lastEditor>
+    </task>
+  </note>
+  <note>
+    <title>Local Area Network LAN</title>
+    <created>20230501T194455Z</created>
+    <updated>20230501T202018Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><ol><li><div>Wired</div></li><ul><li><div>Uses cables containing twisted pairs of wires and telephone-style "Registered Jack" RJ-45 plugs and jacks</div></li><li><div>Here are networks commonly seen in household and small business computing equipment:</div></li><ul><li><div>1000base T - 1000 m/sec using RJ-45</div></li><li><div>100baseT - 100mb/sec, using RJ-45</div></li><li><div>10baseT - 10mb/sec, using RJ-45</div></li></ul><li><div>Faster networks may use <b>optical fiber</b> instead of <b>copper wires</b></div></li><li><div>Wired LAN always runs faster and more reliable than Wireless LAN</div></li></ul><li><div>Wireless</div></li><ol><li><div>In 1997 the first WLAN protocol IEEE 802.11 released</div></li></ol></ol><div><br/></div><div><br/></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Multiprotocol Label Switching MPLS</title>
+    <created>20230501T164223Z</created>
+    <updated>20230501T172306Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><ul><li><div>is a WAN technology used by internet service providers</div></li><li><div><span style="color:rgb(20, 20, 20);"> is a networking technology that routes traffic using the shortest path based on “labels,” rather than network addresses, to handle forwarding over private wide area networks. </span></div></li><li><div><span style="color:rgb(20, 20, 20);">As a scalable and protocol-independent solution, MPLS assigns labels to each data packet, controlling the path the packet follows. </span></div></li><li><div><span style="color:rgb(20, 20, 20);">MPLS greatly improves the speed of traffic, so users don’t experience downtime when connected to the network.</span></div></li></ul><div><br/></div><div><br/></div><div><br/></div><div><br/></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>OSI - TCP/IP Models</title>
+    <created>20230501T201923Z</created>
+    <updated>20230501T202406Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div><br/></div><en-media hash="014da0ddccf8c20d458e46668ed09a32" type="image/png" style="--en-naturalWidth:1243; --en-naturalHeight:846;" /><div><br/></div><ul><li><div><b>As a message traverses the protocol stack on the way to the device driver (physical layer) </b></div></li><li><div><b>Each layer applies its own formatting</b></div></li></ul><div><br/></div><div><br/></div></en-note>      ]]>
+    </content>
+    <resource>
+      <data encoding="base64">
+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
+1cqVnefjvti1a9eeQw45OPmzItavvyR/phel6kXEtjotPfPMZN3Fixftee655/JaaVtvvz25bsTu3bvzWlOl6kds2XJDXqPa2osuSq4frycljmOqfmfEsSiTOk7x3nSK49ZZr4hu+9ftdaaOaapee5Qdk06pdSPaX3Oca6k6RaTORRiUuD7n596CSBW3erZ98AMfyD7z2c9OFAGAcXH00UfnpdKeMVSLBk83Zce2at2m1un2+npdZ1z3ZZSvK8yW
+fWnV17ONQavq2Tbx92SrB1nMTFmls/dR3Z5tcWviQQcdlC9NVndw+7IeY52vqV3dXlRlYtbUznHSQswKun7DhnzpRd16Y7WL22RjbLh2Ze9B3Arafrtk1XsVt47eeWf1rawhxryLW3FTUsenqmdb3eMZur0nerQxbpI923xDBgDjJ67RedCf9mPoODLTabczFFU92wpVPciKaO/BlPp5RGfPtqrn7darrbBlyw3J9at6OaXqR8Rz1VXW4y/1urv1
+DmyP1GvYuPGqZN3oidau7FhE1O1hFr3XUutHRI++Tql6RdR9D0Nq/YjY97KehEXo0cYotPdsM0ECADCbxdfi7QFAA6KHWfQwqhLjhEXPql787tnf5aXJYiy4srHPOr3hDUfkpcmefurpvDQYMTFBSuespNELLjUOWtnxTM04esstt+SlF0VPtUMPPTRf6u7w178+L1WLXnVlk0/89re/zUvdRS/Guu9hlehlt+HSS/OlqaI3oR5tjJpkGwAAAD2L
+W/niVr0qMWFBLwm3B+5/IC9NFpMyxG2FdWL+/Pn5WpOV3RrblLe99W15abLOWUn/4R//IS9N9t73vq+VKOrUOStpHM/UbbLnnHNOXnpR2fEMvSTmFp28KC9N1ssxPepNR+Wlwfrm339zrGZKZW6SbAMAAKAv0YMoeiyViR5cn/n0p/Ol2S1mAI3eZZ2iF1bMWBri/02JMRcjyRa9vt7+9rfnj0x2660v9mS7++70OGsnnXRyXhpPL3vZy/LSYMU5
+d8HHP54vwWhItgEAANC3L37pS63bPMtEz6y54v3vf39emqy4lTT+T91C+q53vav1f0yykLpls/220dQtpHH8OydRmMvinIsJFGBUJNsAAADoW/TIuuLLXy4d16sXr3jFK/LSZPHc0YNuOpG6RbNpixYtzkuTfec732n933lLaYh9i15xIY5lauy3uG00bh+N8d5St5AuOT09S+vxJxyfl6bq5fbeu++Zus0Qx3VcxUyl3946dbw7GAbJNgAAAKYl
+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
+      </data>
+      <mime>image/png</mime>
+      <width>1243</width>
+      <height>846</height>
+      <resource-attributes>
+        <file-name>networking models.png</file-name>
+        <source-url>en-cache://tokenKey%3D%22AuthToken%3AUser%3A240631200%22+0bc087c8-4547-6ad3-2068-1e0c905c67d8+014da0ddccf8c20d458e46668ed09a32+https://www.evernote.com/shard/s481/res/2a261bcd-572d-ffae-2c7a-919df588b36a</source-url>
+      </resource-attributes>
+    </resource>
+  </note>
+  <note>
+    <title>Packet Switching</title>
+    <created>20230501T201201Z</created>
+    <updated>20230501T202403Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div><br/></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Point to Point Protocol</title>
+    <created>20230501T163639Z</created>
+    <updated>20230501T172304Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><ul><li><div>Four primary features of LCP are as follows:</div></li><li><div>Multilink interface (bond/load balancing)</div></li><li><div>Error detection:</div></li><li><div>Authentication:</div></li><ul><li><div>PAP</div></li><ul><li><div>Password as Plaintext</div></li></ul><li><div>CHAP</div></li><ul><li><div> Challenge - Handshake Authentication Protocol</div></li></ul><li><div>EAP</div></li><ul><li><div><span style="color:rgb(32, 33, 36);">The Extensible Authentication Protocol is </span><span style="color:rgb(4, 12, 40);">an architectural framework that provides extensibility for authentication methods for commonly used protected network access technologies</span></div></li></ul></ul></ul><div style="padding-left:120px;"><span style="color:rgb(32, 33, 36);"><span style="--en-markholder:true;"><br/></span></span></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Review for Exam 2</title>
+    <created>20230421T165106Z</created>
+    <updated>20230421T170938Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>THCP</div><div>Four steps</div><div><br/></div><div>Assignment 3 calculations - </div><div>What is a file size</div><div><br/></div><div>ASCII code table</div><div><br/></div><div>data representation in computer networks</div><div><br/></div><div>arp is important </div><div><br/></div><div>dns important </div><div><br/></div><div>what is dns?</div><div><br/></div><div>assignment 4 we have a lab about network troubleshooting </div><div><br/></div><div>several network trouble shooting slides</div><div>network trouble shooting tools</div><div>ipconfig</div><div>ifconfig </div><div><br/></div><div>whats the difference </div><div><br/></div><div>in both windows and linux </div><div><br/></div><div>Net stat - what is it about .) we have a lab about it</div><div><br/></div><div>Net BIOS?</div><div><br/></div><div>Root route print to see the routing table on personal computer</div><div><br/></div><div>we have ARP -a </div><div>to show what ? show association between IP and mac address</div><div><br/></div><div>ARP- we have APR diagram in the chapter of ethernet, at the time Yu mentioned, if you get confused about ARP go to the slides, simplest ARP procedures</div><div><br/></div><div>how the ARP request sends out </div><div><br/></div><div>Reverse learning - by the switch</div><div><br/></div><div>what is reverse learning -> study this shit i don't know fucking anything because i'm stupid</div><div><br/></div><div>what is ARP table or MAC address table on the switch</div><div><br/></div><div>what does mac address table look like?</div><div><br/></div><div>http protocol in application layer</div><div><br/></div><div>communication media</div><div><br/></div><div>TTL time to live</div><div><br/></div><div>TTS - cellphone</div><div><br/></div><div>basic principles in data communication - speed of light, electrical signal, in the guided ethernet cable</div><div><br/></div><div>Exam Guide 2 online</div><div><br/></div><div>what is protocol behind the pin? RSIP?</div><div><br/></div><div>what is the protocol for STP</div><div><br/></div><div>for the fiber based cable there are two modes: </div><div><br/></div><div>mDX deletion? </div><div><br/></div><div>what is the meaning a, a, mx, ns</div><div>voice over ip protocols used to establish the voice over ip session, to carry the voice along the data real time::</div><div style="padding-left:40px;">what is the protocol? to carry the real time data:</div><div><br/></div><div>What is VLAN protocol? what is STP protocol</div><div>802.1 X -> Authorizaiton</div><div>what is the protocol over ethernet</div><div>what is the cost for the stp port</div><div>2,4,19,100</div><div style="padding-left:40px;">GI, Fast</div><div style="padding-left:40px;"><br/></div><div>Protocol for wired network = 2.3</div><div><br/></div><div>Collision Domain / Broadcast Domain</div><div><br/></div><div>should know what they are</div><div><br/></div><div>port numbers: SSH HTTP SMTP TELNET DNS</div><div> </div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Routing Protocol Example</title>
+    <created>20230501T171103Z</created>
+    <updated>20230501T201318Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>Routing Information Protocol    Distance Vector </div><div>Open shortest Path First    Link State</div><div>Enhanced Interior Gateway Routing Protocol    Advanced distance vector or hybrid if link state</div><div>Intermediate System to Intermediate system</div><div>Border Gateway Protocol</div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Routing Table</title>
+    <created>20230501T164650Z</created>
+    <updated>20230501T172308Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>win10 print route</div><div>Network Destination, Netmask , Gateway , Interface, Metric</div><ul><li><div>Gateway is like the door door</div></li><li><div>Interface what ports what channel</div></li><li><div>Metric number of hops</div></li></ul><div><br/></div><div>C:\Users\etays><b>route print</b></div><div>===========================================================================</div><div>Interface List</div><div>  5...9c 2d cd f2 de a7 ......Intel(R) Ethernet Connection (16) I219-LM</div><div> 16...0a 00 27 00 00 10 ......VirtualBox Host-Only Ethernet Adapter</div><div> 11...a0 29 42 5b f9 5b ......Microsoft Wi-Fi Direct Virtual Adapter</div><div> 17...a2 29 42 5b f9 5a ......Microsoft Wi-Fi Direct Virtual Adapter #2</div><div>  3...a0 29 42 5b f9 5a ......Intel(R) Wi-Fi 6E AX211 160MHz</div><div>  1...........................Software Loopback Interface 1</div><div>===========================================================================</div><div><br/></div><div>IPv4 Route Table</div><div>===========================================================================</div><div>Active Routes:</div><div>Network Destination        Netmask          Gateway       Interface  Metric</div><div>          0.0.0.0          0.0.0.0   137.21.159.254    137.21.145.81     60</div><div>        127.0.0.0        255.0.0.0         On-link         127.0.0.1    331</div><div>        127.0.0.1  255.255.255.255         On-link         127.0.0.1    331</div><div>  127.255.255.255  255.255.255.255         On-link         127.0.0.1    331</div><div>     137.21.128.0    255.255.224.0         On-link     137.21.145.81    316</div><div>    137.21.145.81  255.255.255.255         On-link     137.21.145.81    316</div><div>   137.21.159.255  255.255.255.255         On-link     137.21.145.81    316</div><div>     192.168.56.0    255.255.255.0         On-link      192.168.56.1    281</div><div>     192.168.56.1  255.255.255.255         On-link      192.168.56.1    281</div><div>   192.168.56.255  255.255.255.255         On-link      192.168.56.1    281</div><div>        224.0.0.0        240.0.0.0         On-link         127.0.0.1    331</div><div>        224.0.0.0        240.0.0.0         On-link      192.168.56.1    281</div><div>        224.0.0.0        240.0.0.0         On-link     137.21.145.81    316</div><div>  255.255.255.255  255.255.255.255         On-link         127.0.0.1    331</div><div>  255.255.255.255  255.255.255.255         On-link      192.168.56.1    281</div><div>  255.255.255.255  255.255.255.255         On-link     137.21.145.81    316</div><div>===========================================================================</div><div>Persistent Routes:</div><div>  None</div><div><br/></div><div>IPv6 Route Table</div><div>===========================================================================</div><div>Active Routes:</div><div> If Metric Network Destination      Gateway</div><div>  1    331 ::1/128                  On-link</div><div> 16    281 fe80::/64                On-link</div><div>  3    316 fe80::/64                On-link</div><div>  3    316 fe80::30ca:5799:ea6:e2b1/128</div><div>                                    On-link</div><div> 16    281 fe80::6758:7ae2:3ece:ab32/128</div><div>                                    On-link</div><div>  1    331 ff00::/8                 On-link</div><div> 16    281 ff00::/8                 On-link</div><div>  3    316 ff00::/8                 On-link</div><div>===========================================================================</div><div>Persistent Routes:</div><div>  None</div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Security Checklist for Small Office / Home Office (SOHO) (2)</title>
+    <created>20230426T164700Z</created>
+    <updated>20230501T164016Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div><br/></div><ol><li><div>Cloaking Turn it Off - when not needed ultimate in protection</div></li><li><div>Encryption use wpa2</div></li><li><div>static up disable DHCP</div></li><li><div>MAC filter</div></li></ol></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Spanning Tree Protocol</title>
+    <created>20230421T162630Z</created>
+    <updated>20230421T165045Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>Given an undirected and connected graph G = (V,E), a spanning tree of the graph G</div><div>MST: Kruskal's Algorithm</div><div>Elections:</div><div>1.) Find the root bridge</div><div>2.) closest to root bridge</div><ul><ul><li><div>lowest cost to root bridge</div></li></ul></ul><div><br/></div><div>Router automatically separates the broadcast domain</div><div><br/></div><div><br/></div><div>is that number like a unit for packets?</div><div><br/></div><div><br/></div><div><br/></div><div>Minimal Spanning Tree</div><div>Is a spanning tree to power every node in the network at minimum cost</div><div>Find the backbone of the network</div><div>If every node is connected to the tree the job is done</div><div>Before we </div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Synchronous Optical Network SONET</title>
+    <created>20230501T164358Z</created>
+    <updated>20230501T172307Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><ul><li><div>Double ring structure for metropolitan area network MAN</div></li><li><div>Just know it is a double ring structure it is good enough</div></li></ul></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>The T1 Carrier</title>
+    <created>20230501T162923Z</created>
+    <updated>20230501T172303Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>1 standard frame = 193 bits</div><div style="padding-left:40px;">192+1</div><div style="padding-left:40px;">1100 0000</div><div style="padding-left:40px;">24*8 = 192</div><div style="padding-left:40px;"><br/></div><div><br/></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Untitled Note</title>
+    <created>20230503T163744Z</created>
+    <updated>20230503T164530Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div><br/></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>WAN Technologies</title>
+    <created>20230501T163012Z</created>
+    <updated>20230501T172302Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><ul><li><div>Dedicated Leased Line   </div></li><li><div>Typically a point-to-point connection between two sites</div></li><li><div>All the bandwidth on that line is available to those sites.</div></li><li><div>Common digital circuits include the following </div></li><ul><li><div>T1,E1,T3,E3 circuits</div></li></ul></ul><div><br/></div><div><u>Frame bit  |     Time slot 1  |     Time slot 2   |   Time slot 3    </u>| ... <u>Time slot 24</u></div><div style="padding-left:80px;"><u>s | 1 2 3 4  5 6 7 8 | 1 2 3 4 5 6 7 8   | 1 2 3 4 5 6 7 8 | 1 2 3 4 5 6 7 8 </u></div><div style="padding-left:80px;"><u><span style="--en-markholder:true;"><br/></span></u></div><ul><li><div><b>1 frame = 193 bits 192 + 1 framing</b></div></li></ul><div><b><span style="--en-markholder:true;"><br/></span></b></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Wide Area Networks</title>
+    <created>20230426T164844Z</created>
+    <updated>20230426T171133Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>Three General Categories:</div><ol><li><div><span style="font-size: 20px;">Dedicated leased line</span></div></li><ul><li><div>Physically this line, is dedicated to you, to the one who leased the line</div></li><li><div>circuit-switch connection</div></li></ul><li><div><span style="font-size: 20px;">Circuit-switched connection</span></div></li><ul><li><div>Services are usually charged based on connect time (per minute)</div></li><li><div>Inefficient if information transfer takes place in<b> short bursts</b> ( with long idle times in between)</div></li><li><div>Circuit switch is what? Is some mechanical that is there to replace the human (the operator)</div></li><li><div>INTEGRATED SERVICES DIGITAL NETWORK (ISDN)</div></li><ul><li><div>is a digital telephony technology that supports multiple<b> 64 kbps channels (B channels)</b> on a single connection</div></li><li><div>is a classified as either a <b>basic rate interface (BRI) </b>circuit or a <b>primary rate interface circuit (PRI)</b></div></li><li><div><b>BRI = 2 B channels + 1 D channel (16 kbps)</b></div></li><li><div><b>PRI is built on a T1 or E1 circuit. If ISDN PRI is built on T1, it has 23 B channels + 1 64 kbps D channel </b></div></li></ul></ul></ol><div style="padding-left:160px;">(used to set up maintain and tear down communications)</div><ol start="3"><li><div><span style="font-size: 20px;">Packet-switched connection</span> - (this is in the layer two even though it uses packets - (not layer three)</div></li><ul><li><div>Frame switch connection</div></li><li><div>Asynchronous Transfer Mode (ATM)</div></li><ul><li><div>is a layer 2 WAN technology that operates using the concept of permanent virtual circuits (PVCs) and switched virutal circuits (SVC)</div></li><li><div>ATM uses a fixed- length</div></li><li><div>ATM packet has 53 bytes</div></li></ul></ul></ol><div><br/></div><div><br/></div><div><br/></div></en-note>      ]]>
+    </content>
+  </note>
+  <note>
+    <title>Wiring a Small Network</title>
+    <created>20230501T195434Z</created>
+    <updated>20230501T202027Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"><en-note><div>To build a small network, we connect to one of these types of nodes:</div><div><br/></div><ol><li><div>Hub</div></li><ul><li><div>High speed node that broadcasts using ethernet LAN protocols</div></li></ul><li><div>Switch</div></li><ul><li><div>Lower speed node to share ethernet package among connected hosts. (more secure)</div></li></ul></ol><div><br/></div><div style="padding-left:40px;">Ethernet Frame Format:</div><ul><ul><li><div>Once a LAN interface receives an Ethernet packet, it interprets the contents</div></li><li><div>This is the Ethernet II format, which is the common format in modern LANs</div></li><li><div>Destination MAC---------------6 bytes </div></li><li><div>Source MAC---------------------6 bytes</div></li><li><div>Packet Type -------------------- 2 bytes</div></li><li><div>Data field------------------------46 to 1600 byes</div></li><li><div>CRC -------------------------------4 bytes (checksum)</div></li></ul></ul><div>Transmitting Data</div></en-note>      ]]>
+    </content>
+  </note>
+</en-export>
